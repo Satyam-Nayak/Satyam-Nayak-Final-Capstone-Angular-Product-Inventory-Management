@@ -1,0 +1,61 @@
+/* Center the product details box */
+h2 {
+    text-align: center;
+    color: #2E7D32; /* Dark green title for a clean look */
+    margin-bottom: 20px;
+}
+
+/* Stylish product details container with rainbow border */
+.product-container {
+    max-width: 600px; /* Control the width for better readability */
+    margin: 40px auto; /* Center the box horizontally and add top/bottom space */
+    padding: 30px;
+    background: #fff; /* White background inside */
+    border-radius: 16px; /* Rounded corners for a modern touch */
+    position: relative; /* Ensure position for pseudo-elements */
+    animation: rainbow-border 6s linear infinite; /* Rainbow border animation */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for a dynamic feel */
+.product-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Rainbow border animation */
+@keyframes rainbow-border {
+    0% { border: 6px solid #ff0000; } /* Red */
+    14% { border: 6px solid #ff7f00; } /* Orange */
+    28% { border: 6px solid #ffff00; } /* Yellow */
+    42% { border: 6px solid #00ff00; } /* Green */
+    57% { border: 6px solid #0000ff; } /* Blue */
+    71% { border: 6px solid #4b0082; } /* Indigo */
+    85% { border: 6px solid #8b00ff; } /* Violet */
+    100% { border: 6px solid #ff0000; } /* Back to Red */
+}
+
+/* Bold the labels (Name, Description, etc.) */
+p {
+    font-size: 18px;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+p strong {
+    color: #4CAF50; /* Green accent for labels */
+    margin-right: 10px;
+}
+
+/* Responsive Design: Adjust for smaller screens */
+@media (max-width: 768px) {
+    .product-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    p {
+        font-size: 16px; /* Slightly smaller font for mobile */
+    }
+}

@@ -1,0 +1,126 @@
+/* Container Styling */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #2C3E50;
+}
+
+/* Product List */
+ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Space between product boxes */
+    padding: 0;
+    list-style: none;
+    margin: 0 auto;
+    max-width: 1200px; /* Max width for larger screens */
+}
+
+/* Product Item - Square Box */
+li {
+    border: 2px solid #4CAF50; /* Green border */
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #FFFFFF;
+}
+
+/* Hover Effect */
+li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 128, 0, 0.3);
+}
+
+/* Product Name */
+li span {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+/* Button Container */
+li button {
+    margin: 8px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Button Styles */
+button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button:hover {
+    background-color: #388E3C;
+    transform: scale(1.05);
+}
+
+/* View Button */
+button:nth-child(1) {
+    background-color: #2196F3;
+}
+
+button:nth-child(1):hover {
+    background-color: #1976D2;
+}
+
+/* Edit Button */
+button:nth-child(2) {
+    background-color: #FFC107;
+}
+
+button:nth-child(2):hover {
+    background-color: #FFA000;
+}
+
+/* Delete Button */
+button:nth-child(3) {
+    background-color: #F44336;
+}
+
+button:nth-child(3):hover {
+    background-color: #D32F2F;
+}
+
+/* Add Product Button */
+button[routerLink="/inventory/add-product"] {
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button[routerLink="/inventory/add-product"]:hover {
+    background-color: #2E7D32;
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    li {
+        padding: 15px;
+    }
+
+    button {
+        padding: 6px 10px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}

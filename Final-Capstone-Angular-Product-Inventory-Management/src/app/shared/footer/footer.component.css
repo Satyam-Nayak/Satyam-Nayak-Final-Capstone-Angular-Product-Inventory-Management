@@ -1,0 +1,27 @@
+/* Sticky footer at the bottom */
+footer {
+    position: fixed; /* Fixes the footer to the bottom */
+    bottom: 0; /* Sticks the footer to the bottom edge */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
+    background: #2c3e50; /* Dark navy background for a sleek look */
+    color: #fff; /* White text for contrast */
+    text-align: center; /* Center the content horizontally */
+    padding: 8px 0; /* Slim height */
+    font-size: 14px; /* Small and clean text */
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    z-index: 1000; /* Ensures it stays on top */
+}
+
+/* Hover effect for a slight glow */
+footer:hover {
+    background: #34495e; /* Lighter shade on hover */
+}
+
+/* Responsive: Ensure the footer adjusts on smaller screens */
+@media (max-width: 600px) {
+    footer {
+        font-size: 12px; /* Smaller font on small screens */
+        padding: 6px 0;
+    }
+}

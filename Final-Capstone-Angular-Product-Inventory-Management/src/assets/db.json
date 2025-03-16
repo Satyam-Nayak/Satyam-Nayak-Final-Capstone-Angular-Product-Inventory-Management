@@ -1,0 +1,84 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "john.doe@example.com",
+      "password": "password123",
+      "firstName": "John",
+      "lastName": "Doe",
+      "location": "New York",
+      "mobileNumber": "1234567890"
+    },
+    {
+      "id": 2,
+      "email": "jane.smith@example.com",
+      "password": "password456",
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "location": "Los Angeles",
+      "mobileNumber": "0987654321"
+    },
+    {
+      "email": "som@gmail.com",
+      "password": "123456",
+      "firstName": "Som",
+      "lastName": "N",
+      "location": "Udala",
+      "mobileNumber": "1234567890",
+      "id": 3
+    },
+    {
+      "email": "sonu@gmail.com",
+      "password": "123456",
+      "firstName": "Sonu",
+      "lastName": "N",
+      "location": "Udala",
+      "mobileNumber": "1234567890",
+      "id": 4
+    },
+    {
+      "email": "eli@gmail.com",
+      "password": "123456",
+      "firstName": "Eli",
+      "lastName": "N",
+      "location": "Jadida",
+      "mobileNumber": "1234567899",
+      "id": 5
+    }
+  ],
+  "products": [
+    {
+      "id": 101,
+      "name": "Laptop",
+      "description": "A powerful gaming laptop",
+      "manufacturer": "Tech Corp",
+      "price": 1204,
+      "quantity": 10
+    },
+    {
+      "id": 102,
+      "name": "Smartphone",
+      "description": "Latest smartphone with 5G",
+      "manufacturer": "Mobile Inc",
+      "manufacturingDate": "2024-02-15",
+      "price": 800,
+      "quantity": 25
+    },
+    {
+      "name": "Mobile",
+      "description": "Realme note 8 Pro",
+      "manufacturer": "Realme",
+      "price": 25099,
+      "quantity": 69,
+      "id": 1741974380695
+    },
+    {
+      "name": "Toy",
+      "description": "Toy chocolate",
+      "manufacturer": "KinderJOy",
+      "price": 35,
+      "quantity": 40,
+      "id": 1742107145802
+    }
+  ]
+}
